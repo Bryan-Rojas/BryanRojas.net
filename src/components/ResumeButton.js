@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import resume from '../static/resume/Bryan Rojas - Resume - April 2020.pdf'
+import resume from '../static/resume/resume.pdf'
 
 class Buttons extends Component {
     render() {
