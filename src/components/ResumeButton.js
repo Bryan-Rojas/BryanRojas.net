@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { IconFileText, IconBrandLinkedin, IconBrandGithub } from './icons/TablerIcons';
 
 class Buttons extends Component {
   render() {
@@ -10,7 +11,7 @@ class Buttons extends Component {
           rel="noopener noreferrer"
           className="btn btn-primary"
         >
-          Resume
+          <IconFileText size={18} /> Resume
         </a>
         <a
           href="https://www.linkedin.com/in/~bryan/"
@@ -18,15 +19,15 @@ class Buttons extends Component {
           rel="noopener noreferrer"
           className="btn btn-primary"
         >
-          LinkedIn
+          <IconBrandLinkedin size={18} /> LinkedIn
         </a>
         <a
-          href="https://github.com/bryan-rojas"
+          href="https://github.com/Bryan-Rojas"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-primary"
         >
-          GitHub
+          <IconBrandGithub size={18} /> GitHub
         </a>
       </div>
     );

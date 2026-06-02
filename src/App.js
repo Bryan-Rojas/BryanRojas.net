@@ -3,6 +3,7 @@ import './App.css';
 import Selfie from './components/Image';
 import Description from './components/Description';
 import Buttons from './components/ResumeButton';
+import { IconMail, IconBrandLinkedin, IconBrandGithub } from './components/icons/TablerIcons';
 
 function App() {
   return (
@@ -17,18 +18,21 @@ function App() {
         <section id="about" className="section">
           <h2 className="section-title">About Me</h2>
           <p className="section-text">
-            I'm a Senior Software Engineer at Oracle, where I've spent the last several years in SRE and DevSecOps — now pivoting hard toward AI adoption across everything I do. I lived the infrastructure life: on-call rotations, security hardening, CI/CD pipelines, keeping production alive. Now I'm channeling all of that into making AI practical and reusable in real engineering workflows.
+            I'm a Senior Software Engineer at Oracle, where I spent several years in SRE and DevSecOps — on-call rotations, security hardening, CI/CD pipelines, keeping production alive. Now I'm pivoting hard toward AI adoption: using Codex daily, building reusable skills, and automating engineering workflows to reduce toil.
           </p>
-          <p className="section-text" style={{ marginTop: '1rem' }}>
-            I'm the kind of engineer who can't leave a tool alone until it's <em>exactly</em> how I want it. I went through a massive setup cycle configuring Hermes Agent + OpenRouter + Obsidian — skills, prompts, integrations — before I even started producing real work with it. I'm an early adopter by nature: I love discovering new tech, going deep, and then automating it so the next person (or future me) has it easier.
+          <p className="section-text" style={{ marginTop: '1.25rem' }}>
+            I'm an early adopter by nature. I went through a massive setup cycle configuring Hermes Agent + OpenRouter + Obsidian before I even started producing real work with it — I can't leave a tool alone until it's exactly how I want it.
           </p>
-          <p className="section-text" style={{ marginTop: '1rem' }}>
-            Outside of work, I compete in high-level One Piece TCG tournaments, travel for events, and collect prize cards. I'm also an anime and manga person, a lifelong learner (currently taking swim lessons at 30 — never too late), and a newlywed who loves cats.
+          <p className="section-text" style={{ marginTop: '1.25rem' }}>
+            Outside of work, I compete in high-level One Piece TCG tournaments and travel for events. I love anime, manga, coding, tech, and learning — I'm currently taking swim lessons at 30 because I never learned as a kid. Recently married, and I love cats.
           </p>
         </section>
 
         <section id="skills" className="section">
           <h2 className="section-title">Skills &amp; Tech Stack</h2>
+          <p className="section-text" style={{ marginBottom: '0.5rem' }}>
+            Jack of all trades — not claiming expert in any single thing, but I pick up new stacks fast.
+          </p>
           <div className="skills-grid">
             <div className="skill-category">
               <h3>Languages</h3>
@@ -51,10 +55,11 @@ function App() {
                 <span className="tag">Terraform</span>
                 <span className="tag">CI/CD</span>
                 <span className="tag">Linux</span>
+                <span className="tag">SRE</span>
               </div>
             </div>
             <div className="skill-category">
-              <h3>AI &amp; Tools</h3>
+              <h3>AI &amp; Automation</h3>
               <div className="skill-tags">
                 <span className="tag">OpenAI Codex</span>
                 <span className="tag">Hermes Agent</span>
@@ -68,7 +73,6 @@ function App() {
               <div className="skill-tags">
                 <span className="tag">Full-stack</span>
                 <span className="tag">DevSecOps</span>
-                <span className="tag">SRE</span>
                 <span className="tag">distributed systems</span>
               </div>
             </div>
@@ -81,22 +85,22 @@ function App() {
             <div className="experience-card">
               <div className="experience-header">
                 <h3>Senior Software Engineer</h3>
-                <span className="experience-date">2025 – Present</span>
+                <span className="experience-date">2025 - Present</span>
               </div>
               <p className="experience-company">Oracle</p>
               <p className="experience-desc">
-                Promoted in May 2025 from Software Engineer. Now pivoting the team toward practical AI adoption — using Codex daily, building reusable skills, and automating engineering workflows to reduce toil and accelerate delivery.
+                Promoted May 2025. Pivoting the team toward practical AI adoption — daily Codex usage, reusable skills, workflow automation.
               </p>
             </div>
 
             <div className="experience-card">
               <div className="experience-header">
                 <h3>Software Engineer</h3>
-                <span className="experience-date">2019 – 2025</span>
+                <span className="experience-date">2019 - 2025</span>
               </div>
               <p className="experience-company">Oracle</p>
               <p className="experience-desc">
-                SRE and DevSecOps: infrastructure management, security hardening, CI/CD pipelines, keeping large-scale production systems reliable. Deep understanding of the full software delivery lifecycle.
+                SRE and DevSecOps: infrastructure, security hardening, CI/CD, production reliability at scale.
               </p>
             </div>
           </div>
@@ -110,15 +114,15 @@ function App() {
           </p>
           <div className="contact-links">
             <a href="mailto:bryanrojascs@gmail.com" className="contact-link" aria-label="Email">
-              <span className="contact-icon" role="img" aria-label="Email">✉</span>
+              <span className="contact-icon"><IconMail size={20} /></span>
               bryanrojascs@gmail.com
             </a>
             <a href="https://www.linkedin.com/in/~bryan/" target="_blank" rel="noopener noreferrer" className="contact-link" aria-label="LinkedIn">
-              <span className="contact-icon">in</span>
+              <span className="contact-icon"><IconBrandLinkedin size={20} /></span>
               LinkedIn
             </a>
             <a href="https://github.com/Bryan-Rojas" target="_blank" rel="noopener noreferrer" className="contact-link" aria-label="GitHub">
-              <span className="contact-icon">GH</span>
+              <span className="contact-icon"><IconBrandGithub size={20} /></span>
               GitHub
             </a>
           </div>
