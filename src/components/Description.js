@@ -5,7 +5,7 @@ class Description extends Component {
     return (
       <div>
         <h1 className="hero-name">Bryan Rojas</h1>
-        <p className="hero-tagline">Software Engineer | People Helper | Tech Enthusiast</p>
+        <p className="hero-tagline">Senior Software Engineer | Oracle | AI Adoption & DevSecOps</p>
       </div>
     );
   }

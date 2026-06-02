@@ -17,10 +17,13 @@ function App() {
         <section id="about" className="section">
           <h2 className="section-title">About Me</h2>
           <p className="section-text">
-            I'm a Software Engineer with a passion for building scalable, reliable web applications and distributed systems.
-            With experience spanning full-stack development, cloud infrastructure, and team leadership, I enjoy tackling
-            complex problems that sit at the intersection of performance and usability. I care deeply about writing clean,
-            maintainable code and helping the people around me grow.
+            I'm a Senior Software Engineer at Oracle, where I've spent the last several years in SRE and DevSecOps — now pivoting hard toward AI adoption across everything I do. I lived the infrastructure life: on-call rotations, security hardening, CI/CD pipelines, keeping production alive. Now I'm channeling all of that into making AI practical and reusable in real engineering workflows.
+          </p>
+          <p className="section-text" style={{ marginTop: '1rem' }}>
+            I'm the kind of engineer who can't leave a tool alone until it's <em>exactly</em> how I want it. I went through a massive setup cycle configuring Hermes Agent + OpenRouter + Obsidian — skills, prompts, integrations — before I even started producing real work with it. I'm an early adopter by nature: I love discovering new tech, going deep, and then automating it so the next person (or future me) has it easier.
+          </p>
+          <p className="section-text" style={{ marginTop: '1rem' }}>
+            Outside of work, I compete in high-level One Piece TCG tournaments, travel for events, and collect prize cards. I'm also an anime and manga person, a lifelong learner (currently taking swim lessons at 30 — never too late), and a newlywed who loves cats.
           </p>
         </section>
 
@@ -35,89 +38,65 @@ function App() {
                 <span className="tag">Python</span>
                 <span className="tag">Go</span>
                 <span className="tag">Java</span>
+                <span className="tag">Bash</span>
                 <span className="tag">SQL</span>
               </div>
             </div>
             <div className="skill-category">
-              <h3>Frontend</h3>
-              <div className="skill-tags">
-                <span className="tag">React</span>
-                <span className="tag">Next.js</span>
-                <span className="tag">Vue.js</span>
-                <span className="tag">CSS / Sass</span>
-                <span className="tag">Tailwind CSS</span>
-              </div>
-            </div>
-            <div className="skill-category">
-              <h3>Backend</h3>
-              <div className="skill-tags">
-                <span className="tag">Node.js</span>
-                <span className="tag">Express</span>
-                <span className="tag">Django</span>
-                <span className="tag">REST APIs</span>
-                <span className="tag">GraphQL</span>
-              </div>
-            </div>
-            <div className="skill-category">
-              <h3>Cloud &amp; DevOps</h3>
+              <h3>Cloud &amp; Infra</h3>
               <div className="skill-tags">
                 <span className="tag">AWS</span>
                 <span className="tag">Docker</span>
                 <span className="tag">Kubernetes</span>
                 <span className="tag">Terraform</span>
                 <span className="tag">CI/CD</span>
+                <span className="tag">Linux</span>
               </div>
             </div>
             <div className="skill-category">
-              <h3>Data</h3>
+              <h3>AI &amp; Tools</h3>
               <div className="skill-tags">
-                <span className="tag">PostgreSQL</span>
-                <span className="tag">MongoDB</span>
-                <span className="tag">Redis</span>
-                <span className="tag">Elasticsearch</span>
+                <span className="tag">OpenAI Codex</span>
+                <span className="tag">Hermes Agent</span>
+                <span className="tag">OpenRouter</span>
+                <span className="tag">prompt engineering</span>
+                <span className="tag">skill authoring</span>
+              </div>
+            </div>
+            <div className="skill-category">
+              <h3>Systems</h3>
+              <div className="skill-tags">
+                <span className="tag">Full-stack</span>
+                <span className="tag">DevSecOps</span>
+                <span className="tag">SRE</span>
+                <span className="tag">distributed systems</span>
               </div>
             </div>
           </div>
         </section>
 
         <section id="experience" className="section">
-          <h2 className="section-title">Experience &amp; Projects</h2>
+          <h2 className="section-title">Experience</h2>
           <div className="experience-list">
             <div className="experience-card">
               <div className="experience-header">
                 <h3>Senior Software Engineer</h3>
-                <span className="experience-date">2022 – Present</span>
+                <span className="experience-date">2025 – Present</span>
               </div>
-              <p className="experience-company">Independent Cloud Application Development &amp; Consulting</p>
+              <p className="experience-company">Oracle</p>
               <p className="experience-desc">
-                Building and deploying cloud-native applications on AWS using modern tooling
-                (Docker, Kubernetes, Terraform). Leading end-to-end development from architecture
-                design to production delivery for clients across multiple industries.
+                Promoted in May 2025 from Software Engineer. Now pivoting the team toward practical AI adoption — using Codex daily, building reusable skills, and automating engineering workflows to reduce toil and accelerate delivery.
               </p>
             </div>
 
             <div className="experience-card">
               <div className="experience-header">
                 <h3>Software Engineer</h3>
-                <span className="experience-date">2019 – 2022</span>
+                <span className="experience-date">2019 – 2025</span>
               </div>
-              <p className="experience-company">Enterprise Web Solutions</p>
+              <p className="experience-company">Oracle</p>
               <p className="experience-desc">
-                Developed and maintained large-scale web applications serving millions of users.
-                Implemented microservices architecture with Node.js and Python, reducing system
-                latency by 40%. Mentored junior engineers and led code review processes.
-              </p>
-            </div>
-
-            <div className="experience-card">
-              <div className="experience-header">
-                <h3>Open Source Contributor</h3>
-                <span className="experience-date">Ongoing</span>
-              </div>
-              <p className="experience-company">Various Projects</p>
-              <p className="experience-desc">
-                Active contributor to open-source projects in the React and DevOps ecosystems.
-                Built developer tools and CLI utilities that have been adopted by hundreds of engineers.
+                SRE and DevSecOps: infrastructure management, security hardening, CI/CD pipelines, keeping large-scale production systems reliable. Deep understanding of the full software delivery lifecycle.
               </p>
             </div>
           </div>
@@ -130,21 +109,17 @@ function App() {
             Feel free to reach out through any of the channels below.
           </p>
           <div className="contact-links">
-            <a href="mailto:bryan@bryanrojas.net" className="contact-link" aria-label="Email">
+            <a href="mailto:bryanrojascs@gmail.com" className="contact-link" aria-label="Email">
               <span className="contact-icon" role="img" aria-label="Email">✉</span>
-              bryan@bryanrojas.net
+              bryanrojascs@gmail.com
             </a>
             <a href="https://www.linkedin.com/in/~bryan/" target="_blank" rel="noopener noreferrer" className="contact-link" aria-label="LinkedIn">
               <span className="contact-icon">in</span>
               LinkedIn
             </a>
-            <a href="https://github.com/bryan-rojas" target="_blank" rel="noopener noreferrer" className="contact-link" aria-label="GitHub">
+            <a href="https://github.com/Bryan-Rojas" target="_blank" rel="noopener noreferrer" className="contact-link" aria-label="GitHub">
               <span className="contact-icon">GH</span>
               GitHub
-            </a>
-            <a href="https://res.cloudinary.com/dzwtspghi/image/upload/v1644435651/Bryan_Rojas_-_Resume_-_2022_wdieln.pdf" target="_blank" rel="noopener noreferrer" className="contact-link" aria-label="Resume">
-              <span className="contact-icon" role="img" aria-label="Resume">📄</span>
-              Resume
             </a>
           </div>
         </section>
