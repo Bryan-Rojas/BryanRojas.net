@@ -4,7 +4,11 @@ import selfie from '../static/images/selfie.png';
 class Image extends Component {
   render() {
     return (
-      <portrait src={selfie} alt="Portrait of Bryan Rojas" />
+      <img
+        src={selfie}
+        alt="Portrait of Bryan Rojas"
+        className="hero-photo"
+      />
     );
   }
 }

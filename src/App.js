@@ -18,13 +18,16 @@ function App() {
         <section id="about" className="section">
           <h2 className="section-title">About Me</h2>
           <p className="section-text">
-            I'm a Senior Software Engineer at Oracle, where I spent several years in SRE and DevSecOps — on-call rotations, security hardening, CI/CD pipelines, keeping production alive. Now I'm pivoting hard toward AI adoption: using Codex daily, building reusable skills, and automating engineering workflows to reduce toil.
+            👋 Hey, I'm Bryan!
           </p>
           <p className="section-text" style={{ marginTop: '1.25rem' }}>
-            I'm an early adopter by nature. I went through a massive setup cycle configuring Hermes Agent + OpenRouter + Obsidian before I even started producing real work with it — I can't leave a tool alone until it's exactly how I want it.
+            I'm a Senior Software Engineer at Oracle, coming from a SRE and DevSecOps world — on-call rotations, security hardening, CI/CD pipelines, keeping production running at scale. Lately I've been hard-pivoting into AI: using Codex daily, building reusable agent skills, and automating everything I can get my hands on.
           </p>
           <p className="section-text" style={{ marginTop: '1.25rem' }}>
-            Outside of work, I compete in high-level One Piece TCG tournaments and travel for events. I love anime, manga, coding, tech, and learning — I'm currently taking swim lessons at 30 because I never learned as a kid. Recently married, and I love cats.
+            🔧 I'm a tinkerer at heart. I spent weeks configuring the perfect setup with Hermes Agent + OpenRouter + Obsidian before I actually started producing anything real. If a tool exists, I'll customize it until it's <em>just right</em>.
+          </p>
+          <p className="section-text" style={{ marginTop: '1.25rem' }}>
+            🎮 Outside of work, I compete in high-level One Piece TCG tournaments and travel for events. I'm a huge anime & manga nerd, a lifelong coder, and a constant learner — I'm currently taking swim lessons at 30 because I never learned as a kid. 💍 Recently married. 🐱 Love cats.
           </p>
         </section>
 
@@ -85,22 +88,22 @@ function App() {
             <div className="experience-card">
               <div className="experience-header">
                 <h3>Senior Software Engineer</h3>
-                <span className="experience-date">2025 - Present</span>
+                <span className="experience-date">2025 – Present</span>
               </div>
               <p className="experience-company">Oracle</p>
               <p className="experience-desc">
-                Promoted May 2025. Pivoting the team toward practical AI adoption — daily Codex usage, reusable skills, workflow automation.
+                Promoted May 2025. Leading the team's shift toward practical AI adoption — integrating Codex into daily workflows, creating reusable agent skills, and automating repetitive engineering tasks to reduce toil and speed up delivery.
               </p>
             </div>
 
             <div className="experience-card">
               <div className="experience-header">
                 <h3>Software Engineer</h3>
-                <span className="experience-date">2019 - 2025</span>
+                <span className="experience-date">2019 – 2025</span>
               </div>
               <p className="experience-company">Oracle</p>
               <p className="experience-desc">
-                SRE and DevSecOps: infrastructure, security hardening, CI/CD, production reliability at scale.
+                SRE and DevSecOps: managed cloud infrastructure, hardened security posture, built and maintained CI/CD pipelines, and maintained production reliability at scale for enterprise systems serving thousands of users.
               </p>
             </div>
           </div>
@@ -115,7 +118,7 @@ function App() {
           <div className="contact-links">
             <a href="mailto:bryanrojascs@gmail.com" className="contact-link" aria-label="Email">
               <span className="contact-icon"><IconMail size={20} /></span>
-              bryanrojascs@gmail.com
+              Email
             </a>
             <a href="https://www.linkedin.com/in/~bryan/" target="_blank" rel="noopener noreferrer" className="contact-link" aria-label="LinkedIn">
               <span className="contact-icon"><IconBrandLinkedin size={20} /></span>

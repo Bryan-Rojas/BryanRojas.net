@@ -68,7 +68,7 @@
   padding: 3rem 0;
 }
 
-.hero portrait {
+.hero-photo {
   width: 180px;
   height: 180px;
   border-radius: 50%;
@@ -138,12 +138,14 @@
 
 /* ─── Sections ─── */
 .section {
-  padding: var(--section-spacing) 0;
+  padding: 4rem 0;
   border-top: 1px solid var(--border-subtle);
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .section-title {
-  font-size: 1.85rem;
+  font-size: 1.75rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
   color: var(--text-heading);
@@ -154,7 +156,7 @@
   font-size: 1.05rem;
   color: var(--text-body);
   max-width: 700px;
-  line-height: 1.8;
+  line-height: 1.7;
 }
 
 /* ─── Skills ─── */
@@ -335,7 +337,7 @@
   .container { padding: 0 1.25rem; }
   .hero-name { font-size: 2rem; }
   .hero-tagline { font-size: 1rem; }
-  .hero portrait { width: 140px; height: 140px; }
+  .hero-photo { width: 140px; height: 140px; }
   .section-title { font-size: 1.5rem; }
   .section { padding: 3.5rem 0; }
   .skills-grid { grid-template-columns: 1fr; }
