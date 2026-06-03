@@ -15,23 +15,18 @@ function App() {
           <Buttons />
         </section>
 
-        <section id="about" className="section">
+        <section id="about" className="section section-animate">
+          <div className="section-line"></div>
           <h2 className="section-title">About Me</h2>
-          <p className="section-text">
-            👋 Hey, I'm Bryan!
-          </p>
-          <p className="section-text" style={{ marginTop: '1.25rem' }}>
-            I'm a Senior Software Engineer at Oracle, coming from a SRE and DevSecOps world — on-call rotations, security hardening, CI/CD pipelines, keeping production running at scale. Lately I've been hard-pivoting into AI: using Codex daily, building reusable agent skills, and automating everything I can get my hands on.
-          </p>
-          <p className="section-text" style={{ marginTop: '1.25rem' }}>
-            🔧 I'm a tinkerer at heart. I spent weeks configuring the perfect setup with Hermes Agent + OpenRouter + Obsidian before I actually started producing anything real. If a tool exists, I'll customize it until it's <em>just right</em>.
-          </p>
-          <p className="section-text" style={{ marginTop: '1.25rem' }}>
-            🎮 Outside of work, I compete in high-level One Piece TCG tournaments and travel for events. I'm a huge anime & manga nerd, a lifelong coder, and a constant learner — I'm currently taking swim lessons at 30 because I never learned as a kid. 💍 Recently married. 🐱 Love cats.
-          </p>
+          <p className="section-text">👋 Hey, I'm Bryan! — Senior Software Engineer at Oracle with a background spanning SRE, DevSecOps, cloud infrastructure, and platform engineering.</p>
+          <p className="section-text">For the past several years I've been building and owning production systems at scale: CI/CD pipelines, security hardening, observability, incident response, and the infrastructure that keeps services reliable when it matters most.</p>
+          <p className="section-text">Lately, my focus has shifted toward AI engineering and developer productivity. I build agent-based systems, MCP integrations, and automation tools powered by OpenAI, Hermes-Agent, OpenRouter, and local models. My favorite work lives at the intersection of infrastructure and AI — turning repetitive, manual workflows into systems that can think, retrieve, and act autonomously.</p>
+          <p className="section-text">🔧 I'm a builder and optimizer at heart. Whether it's Terraform, Cloud, Python, JavaScript, agent orchestration, or personal knowledge systems — if something can be improved, I'm probably already tinkering with it. I care as much about developer experience and long-term maintainability as I do about shipping.</p>
+          <p className="section-text">🎮 Outside of work, I compete in high-level One Piece TCG tournaments and travel to events — the grind doesn't stop at the keyboard. I'm a lifelong anime & manga nerd, a constant learner, and I recently started swim lessons at 30 because it's never too late to pick up something new. 💍 Recently married. 🐱 Obsessed with cats.</p>
         </section>
 
-        <section id="skills" className="section">
+        <section id="skills" className="section section-animate">
+          <div className="section-line"></div>
           <h2 className="section-title">Skills &amp; Tech Stack</h2>
           <p className="section-text" style={{ marginBottom: '0.5rem' }}>
             Jack of all trades — not claiming expert in any single thing, but I pick up new stacks fast.
@@ -82,7 +77,8 @@ function App() {
           </div>
         </section>
 
-        <section id="experience" className="section">
+        <section id="experience" className="section section-animate">
+          <div className="section-line"></div>
           <h2 className="section-title">Experience</h2>
           <div className="experience-list">
             <div className="experience-card">
@@ -109,7 +105,8 @@ function App() {
           </div>
         </section>
 
-        <section id="contact" className="section">
+        <section id="contact" className="section section-animate">
+          <div className="section-line"></div>
           <h2 className="section-title">Get In Touch</h2>
           <p className="section-text">
             I'm always open to new opportunities, interesting conversations, and collaborations.
@@ -132,7 +129,7 @@ function App() {
         </section>
 
         <footer className="footer">
-          <p>&copy; {new Date().getFullYear()} Bryan Rojas. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Bryan Rojas. All rights reserved.</p>
         </footer>
       </div>
     </div>
