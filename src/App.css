@@ -347,3 +347,82 @@
 }
 
 html { scroll-behavior: smooth; }
+
+/* ─── Typing Effect ─── */
+.hero-subtitle {
+  font-size: 1.15rem;
+  color: var(--text-body);
+  font-weight: 300;
+  margin-bottom: 2rem;
+  min-height: 1.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-subtitle-text {
+  white-space: pre;
+}
+
+.hero-cursor {
+  display: inline-block;
+  width: 1px;
+  margin-left: 2px;
+  color: var(--accent-primary);
+  font-weight: 400;
+  transition: opacity 0.1s step-end;
+}
+
+/* ─── Scroll Animations ─── */
+.section-animate {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: transform, opacity;
+}
+
+.section-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Tag Stagger ─── */
+.tag-animate {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+  will-change: transform, opacity;
+}
+
+.tag-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Section Divider Line ─── */
+.section-line {
+  height: 1px;
+  background: var(--accent-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.8s ease-out;
+  margin: 0 auto;
+  max-width: 700px;
+  will-change: transform;
+}
+
+.section-line.visible {
+  transform: scaleX(1);
+}
+
+/* ─── Reduced Motion ─── */
+@media (prefers-reduced-motion: reduce) {
+  .section-animate,
+  .tag-animate,
+  .section-line {
+    opacity: 1 !important;
+    transform: none !important;
+    transition-duration: 0s !important;
+    will-change: auto !important;
+  }
+}
