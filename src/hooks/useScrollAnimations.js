@@ -1,44 +1,41 @@
 import { useEffect } from 'react';
 
-function useScrollAnimations(prefersReducedMotion) {
+export default function useScrollAnimations(prefersReducedMotion = false) {
   useEffect(() => {
     if (prefersReducedMotion) return;
 
-    // Section fade-up observer
-    const sectionObserver = new IntersectionObserver(
+    const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible');
-
-            // If this section has skill tags, stagger them
-            const tags = entry.target.querySelectorAll('.tag-animate');
-            tags.forEach((tag, index) => {
-              setTimeout(() => {
-                tag.classList.add('visible');
-              }, index * 40);
-            });
-
-            // If this section has divider lines, animate them
-            const lines = entry.target.querySelectorAll('.section-line');
-            lines.forEach((line) => {
-              line.classList.add('visible');
-            });
           }
         });
       },
-      { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
     );
 
-    // Observe all section-animate elements
-    document.querySelectorAll('.section-animate').forEach((el) => {
-      sectionObserver.observe(el);
+    // Observe all animated elements
+    document.querySelectorAll('.section-animate, .tag-animate, .section-line-animate').forEach((el) => {
+      observer.observe(el);
     });
 
-    return () => {
-      sectionObserver.disconnect();
-    };
+    // Stagger skill tags when their parent section becomes visible
+    const skillsSection = document.querySelector('#skills.section-animate');
+    if (skillsSection) {
+      const tagObserver = new IntersectionObserver(
+        (entries) => {
+          if (entries[0].isIntersecting) {
+            document.querySelectorAll('#skills .tag-animate').forEach((tag, i) => {
+              setTimeout(() => tag.classList.add('visible'), i * 40);
+            });
+          }
+        },
+        { threshold: 0.1 }
+      );
+      tagObserver.observe(skillsSection);
+    }
+
+    return () => observer.disconnect();
   }, [prefersReducedMotion]);
 }
-
-export default useScrollAnimations;

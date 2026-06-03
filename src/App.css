@@ -419,10 +419,100 @@ html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) {
   .section-animate,
   .tag-animate,
-  .section-line {
+  .section-line,
+  .section-line-animate {
     opacity: 1 !important;
     transform: none !important;
     transition-duration: 0s !important;
     will-change: auto !important;
   }
+}
+
+/* ===== TYPING EFFECT (inline subtitle) ===== */
+.hero-typing {
+  color: var(--accent-primary);
+  font-weight: 500;
+}
+
+.typing-cursor {
+  color: var(--accent-primary);
+  font-weight: 400;
+  margin-left: 2px;
+  transition: opacity 0.1s;
+}
+
+/* ===== SECTION LINE ANIMATE ===== */
+.section-line-animate {
+  height: 1px;
+  background: var(--accent-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.8s ease-out;
+  margin: 0 auto 2rem;
+  max-width: 700px;
+}
+
+.section-line-animate.visible {
+  transform: scaleX(1);
+}
+
+/* ===== HERO LAYOUT ===== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.hero-name {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  letter-spacing: -0.02em;
+  margin: 1rem 0 0.5rem;
+}
+
+.hero-tagline {
+  font-size: 1.15rem;
+  color: var(--text-body);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* ===== SECTION BASE ===== */
+.section {
+  padding: 5rem 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text-heading);
+  margin-bottom: 2rem;
+}
+
+.section-text {
+  color: var(--text-body);
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin-bottom: 1.25rem;
+}
+
+.section-text:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 3rem 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border-subtle);
+  margin-top: 2rem;
 }
